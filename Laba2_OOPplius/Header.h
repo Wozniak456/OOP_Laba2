@@ -15,6 +15,7 @@ public:
 	int GetSize();
 	void FirstLetterUpperCase();
 	bool FindSubstr(char* substr, int len);
+	~Line();
 };
 class Text
 {
@@ -34,4 +35,5 @@ public:
 	void DeleteLine(int delIndex);
 	void Erase();
 	void OutputText(char** text, int maxI);
+	~Text();
 };
