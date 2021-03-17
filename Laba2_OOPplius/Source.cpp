@@ -59,6 +59,10 @@ bool Line::FindSubstr(char* substr, int len)
 	delete[] temp;
 	return isInLine;
 }
+Line::~Line()
+{
+	delete[] _str;
+}
 Text::Text()
 {
 	_text = nullptr;
@@ -167,4 +171,8 @@ void Text::UpperCase()
 	{
 		_text[i].FirstLetterUpperCase();
 	}
+}
+Text::~Text()
+{
+	delete[] _text;
 }
